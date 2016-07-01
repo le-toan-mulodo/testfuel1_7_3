@@ -43,6 +43,18 @@ class Controller_Welcome extends Controller
 	{
 		return Response::forge(Presenter::forge('welcome/hello'));
 	}
+	
+    /**
+	 * A typical "Hello, Bob!" type example.  This uses a Presenter to
+	 * show how to use them.
+	 *
+	 * @access  public
+	 * @return  Response
+	 */
+	public function action_hello2()
+	{
+		return Response::forge(Presenter::forge('welcome/hello'));
+	}
 
 	/**
 	 * The 404 action for the application.
